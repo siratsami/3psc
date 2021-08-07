@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo ""
+echo " 3rd Party Subdomain Checker By B4GG3R"
+echo " Usage: 3psc subdomains.txt"
+echo ""
+for a in $(cat $1); do dig $a | grep CNAME; done
+echo ""
+echo " Done"
+echo ""
